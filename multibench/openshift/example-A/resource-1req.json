@@ -1,5 +1,10 @@
 "resources": {
     "requests": {
-        "cpu": "1000m"
+        "cpu": "2",
+        "memory": "500Mi"
+    },
+    "limits": {
+        "cpu": "2",
+        "memory": "500Mi"
     }
 }
