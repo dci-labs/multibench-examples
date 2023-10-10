@@ -1,0 +1,27 @@
+apiVersion: sriovnetwork.openshift.io/v1
+kind: SriovNetwork
+metadata:
+  name: "east"
+  namespace: openshift-sriov-network-operator
+spec:
+  networkNamespace: "crucible-rickshaw"
+  resourceName: "intel_numa0_res1"
+  spoofChk: "on"
+  trust: "on"
+  ipam: "{}"
+
+---
+
+apiVersion: sriovnetwork.openshift.io/v1
+kind: SriovNetwork
+metadata:
+  name: "west"
+  namespace: openshift-sriov-network-operator
+spec:
+  networkNamespace: "crucible-rickshaw"
+  resourceName: "intel_numa0_res2"
+  spoofChk: "on"
+  trust: "on"
+  ipam: "{}"
+
+

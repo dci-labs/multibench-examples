@@ -1,0 +1,41 @@
+apiVersion: sriovnetwork.openshift.io/v1
+kind: SriovNetworkNodePolicy
+metadata:
+  name: intel-numa0-policy1
+  namespace: openshift-sriov-network-operator
+spec:
+  deviceType: vfio-pci
+  mtu: 9000
+  nicSelector:
+    deviceID: 158b
+    pfNames:
+    - ens2f0#0-31
+    vendor: "8086"
+  nodeSelector:
+    node-role.kubernetes.io/worker: ""
+  numVfs: 32
+  priority: 99
+  resourceName: intel_numa0_res1
+
+
+---
+apiVersion: sriovnetwork.openshift.io/v1
+kind: SriovNetworkNodePolicy
+metadata:
+  name: intel-numa0-policy2
+  namespace: openshift-sriov-network-operator
+spec:
+  deviceType: vfio-pci 
+  mtu: 9000
+  nicSelector:
+    deviceID: 158b
+    pfNames:
+    - ens2f1#0-31 
+    vendor: "8086"
+  nodeSelector:
+    node-role.kubernetes.io/worker: ""
+  numVfs: 32
+  priority: 99
+  resourceName: intel_numa0_res2
+
+
