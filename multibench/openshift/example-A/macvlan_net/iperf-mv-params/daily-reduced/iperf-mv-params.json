@@ -1,0 +1,28 @@
+{
+  "global-options": [
+    {
+      "name": "common-params",
+      "params": [
+        { "arg": "time", "vals": ["60"] }
+      ]
+    }
+  ],
+  "sets": [
+    {
+      "include": "common-params",
+      "enabled": "yes",
+      "params": [
+        { "arg": "ifname", "vals": ["eth0"], "role": "server" },
+        { "arg": "ipv", "vals": ["6"], "role": "all" },
+
+        { "arg": "protocol", "vals": ["udp"], "id": "3" },
+        { "arg": "bitrate", "vals": ["200M"], "id": "3" },
+        { "arg": "length", "vals": ["256"], "id": "3" },
+
+        { "arg": "protocol", "vals": ["udp"], "id": "4" },
+        { "arg": "bitrate", "vals": ["400M"], "id": "4" },
+        { "arg": "length", "vals": ["512"], "id": "4" }
+      ]
+    }
+  ]
+}
