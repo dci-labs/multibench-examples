@@ -6,7 +6,7 @@
         { "arg": "duration", "vals": ["60"] },
         { "arg": "protocol", "vals": ["tcp"] },
         { "arg": "nthreads", "vals": ["1"] },
-        { "arg": "ifname", "vals": ["eth0"], "role": "server" }
+        { "arg": "ifname", "vals": ["net1"], "role": "server" }
       ]
     }
   ],

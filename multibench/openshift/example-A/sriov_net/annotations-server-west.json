@@ -1,0 +1,6 @@
+"annotations": {
+  "k8s.v1.cni.cncf.io/networks": "[ { \"name\": \"west\", \"namespace\": \"crucible-rickshaw\" } ]",
+  "irq-load-balancing.crio.io": "disable",
+  "cpu-quota.crio.io": "disable"
+}
+

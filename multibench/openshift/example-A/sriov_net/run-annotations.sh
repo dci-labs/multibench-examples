@@ -47,8 +47,10 @@ nodeSelector:server-23-24+29:$SCRIPT_DIR/nodeSelector-worker1.json,\
 userenv:stream8,\
 resources:default:$SCRIPT_DIR/resource-2req.json,\
 resources:client-1-20:$SCRIPT_DIR/resource-1req.json,\
-annotations:client-1-32:$SCRIPT_DIR/annotations-client.json,\
-annotations:server-1-32:$SCRIPT_DIR/annotations-server.json,\
+annotations:client-1-17:$SCRIPT_DIR/annotations-client1.json,\
+annotations:client-18-32:$SCRIPT_DIR/annotations-client2.json,\
+annotations:server-1-17:$SCRIPT_DIR/annotations-server-east.json,\
+annotations:default:$SCRIPT_DIR/annotations-server-west.json,\
 runtimeClassName:performance-blueprint-profile,\
 controller-ip:192.168.5.30,\
 client:1-32,\
